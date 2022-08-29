@@ -21,7 +21,7 @@ def home():
 @app.route("/<int:guess>")
 def guess_number(guess):
     if guess > random_number:
-        return '<h1 style="color: pink">Too high, try again!</h1>' \
+        return '<h1 style="color: yellow">Too high, try again!</h1>' \
                 '<img src="https://media.giphy.com/media/IrwH4Vp5codA0HldUh/giphy.gif"/>'
 
     elif guess < random_number:
